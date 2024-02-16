@@ -2,7 +2,7 @@ use std::net::SocketAddr;
 use tokio::{io::{AsyncReadExt, AsyncWriteExt}, net::TcpListener, stream};
 
 pub async fn setup_and_listen() -> Result<(), Box<dyn std::error::Error + Send + Sync>> {
-    let addr = SocketAddr::from(([192, 168, 0, 24], 3000));
+    let addr = SocketAddr::from(([77,101,133,34], 3000));
     let listener = TcpListener::bind(addr).await?;
 
     loop {
